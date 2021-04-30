@@ -1,0 +1,135 @@
+h1 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.about_competition {
+    padding: 20px 0;
+}
+
+p.source {
+    font-size: 15px;
+    font-style: italic;
+    /*text-align: right;*/
+}
+p.text_result {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+strong {
+    color: firebrick;
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .flex_container_result * {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 600px) {
+    .container_img {
+        height: 35vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    p.source {
+        font-size: 12px;
+    }
+
+    .flex_container_result * {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 411px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p.text_result {
+        text-align: center;
+    }
+
+    p.about_competition {
+        padding: 10px 0;
+    }
+
+    .container_img {
+        height: 30vh;
+    }
+
+    .flex_container_result * {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 360px) {
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    p.text_result {
+        padding-bottom: 5px;
+    }
+
+    .container_img img {
+        top: 40%;
+    }
+}
+
+/*.container_img {*/
+/*    position: relative;*/
+/*    height: 50vh;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.container_img img {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+/*}*/
+
+/*.flex_container_result {*/
+/*    display: flex;*/
+/*}*/
+
+/*.flex_container_result * {*/
+/*    width: 30%;*/
+/*    text-align: center;*/
+/*    font-size: 22px;*/
+/*}*/
+
+/*.flex_container_result:nth-of-type(1) i {*/
+/*    color: #ffba20;*/
+/*}*/
+
+/*.flex_container_result:nth-of-type(2) i {*/
+/*    color: lightslategray;*/
+/*}*/
+
+/*.flex_container_result:nth-of-type(3) i {*/
+/*    color: #8b370c;*/
+/*}*/

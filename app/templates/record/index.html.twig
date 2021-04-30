@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Record view
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/test.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="wrapp">
+<h1>Record list</h1>
+
+    {% if data is defined and data|length %}
+
+    <p>Id tu</p>
+    <p>Title</p>
+    <p>Content</p>
+    <p>Tags</p>
+    {% for item in data %}
+    <p>{{ item.id }}</p>
+    <p>{{ item.title }}</p>
+    <p>{{ item.content }}</p>
+    <p>{{ item.tags|join(',') }}</p>
+    {% endfor %}
+        {% else %}
+        <p>No data!</p>
+    {% endif %}
+    </div>
+{% endblock %}

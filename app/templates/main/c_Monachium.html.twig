@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/c_Monachium.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <h1>Igrzyska Olimpijskie - Monachium 1972r</h1>
+        <div class="container_img">
+            <img src="{{ asset('images/1024pxMunich.jpg') }}" alt="">
+        </div>
+        <p class="source">Źródło: FOTO:FORTEPAN / Romák Éva, CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0, via Wikimedia Commons</p>
+        <p class="about_competition">
+            Do tych igrzysk Irena przygotowywala się już pod okiem trenera Gerarda Macha.
+            Przygotowania zaczęła od obozu zimowego w Zakopanem, gdzie trenowała w grupie czterystumetrowców.
+            Doznała ona jednak poważnej kontuzji – skręcenie stawu skokowego.
+            Z tego powodu Irena na igrzyskach wzięła udział tylko w konkurencji biegu na 100 i 200 metrów.
+            Podium zdobywa tylko w tej drugiej konkurencji.
+        </p>
+        <p class="text_result">Wyniki finałowej serii biegu na 200 metrów</p>
+        <div class="container_results">
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">Renate Stecher(NRD)</p>
+                <p class="result">22.40s</p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">Roalene Boyle(Australia)</p>
+                <p class="result">22.45s</p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name"><strong>Irena Szewińska</strong></p>
+                <p class="result"><strong>22.74s</strong></p>
+            </div>
+        </div>
+
+
+
+    </div>
+{% endblock %}

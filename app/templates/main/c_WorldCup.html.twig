@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/c_WorldCup.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <h1>Puchar Świata - Dusseldorf 1977</h1>
+        <div class="container_img">
+{#            <img src="{{ asset('images/irena-szewinska-Puchar-Swiata.jpg') }}" alt="">#}
+        </div>
+        <p class="source">Autor: Janusz Szewiński</p>
+        <p class="about_competition">
+            Puchar Świata w Dusseldorfie odbył się w 1977 roku. Było to zwieńczenie świetnej kariery Ireny.
+            Została ona kapitanką zespołu Europy. Dzięki niej kobieca drużyna została zdobywcą pucharu.
+            Prawdziwym pokazem umiejętności był bieg na 400 metrów. Irena mierzyła się tam ze świetną sprinterką Maritą Koch.
+            Wyprzedziła ją dosłownie na ostatnich metrach (film), a samo jej zwycięstwo zostało nagrodzone przez publiczność gromkimi brawami… na stojąco!
+        </p>
+        <p class="about_video">Cofnijmy się w czasie i zobaczmy ten znakomity bieg Ireny Szewińskiej.</p>
+        <div class="video_container">
+            <iframe src="https://www.youtube.com/embed/Be9jkhfahqI?start=30"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+
+        </div>
+    <p class="text_result">Wyniki serii finałowej biegu na 400 metrów</p>
+        <div class="container_results">
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name"><strong>Irena Szewińska</strong></p>
+                <p class="result"><strong>49.52s</strong></p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">Martia Koch(NRD)</p>
+                <p class="result">49.76s</p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">Marina Sidorowa(ZSRR)</p>
+                <p class="result">51.29s</p>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

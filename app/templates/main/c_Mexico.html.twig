@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/c_Mexico.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="wrapper">
+    <h1>Igrzyska Olimpijskie - Meksyk 1968r</h1>
+    <div class="img_container">
+    <img src="{{ asset('images/1024px-Opening_Ceremony_Mexico_72_University_Stadium.jpg') }}" alt="">
+    </div>
+    <p class="source">Źródło: Sergio V. Rodriguez, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons</p>
+    <p class="about_competition">Igrzyska w Meksyku nie był dobrym czasem dla sztafety naszych reprezentantek.
+        Sztafeta została pozbawiona kluczowej zawodniczki – Ewy Kłobukowskiej.
+        Ogłoszono również anulowanie wszystkich rekordów z udziałem tej zawodniczki.
+        Wykreślono więc rekord świata sztafety z Tokio (43.6s) z rejestru IAAF.
+        Przyczyną była sprawa związana z podważeniem damskiej płci Ewy Kłobukowskiej.
+        Irena na Igrzyskach zdobywa brązowy medal w biegu na 100metrów oraz złoty medal w biegu na 200 metrów.
+        Sztafeta nie wchodzi do biegu finałowego, ponieważ na czwartej zmianie Irena gubi pałeczkę i dobiega ostatnia z czasem 53.0s.</p>
+
+
+{#    <div class="bgimage_result">#}
+{#        <div class="bgi">#}
+            <p class="text_results">Wyniki finałowego biegu na 100 metrów </p>
+            <div class="container_results">
+                <div class="flex_container_result">
+                    <i class="fas fa-medal"></i>
+                    <p class="name">Wyomia Tyus(USA)</p>
+                    <p class="result">11.07s.</p>
+                </div>
+                <div class="flex_container_result">
+                    <i class="fas fa-medal"></i>
+                    <p class="name">Barbara Ferell(USA)</p>
+                    <p class="result">11.15s.</p>
+                </div>
+                <div class="flex_container_result">
+                    <i class="fas fa-medal"></i>
+                    <p class="name"><strong>Irena Szewińska</strong></p>
+                    <p class="result"><strong>11.19s</strong></p>
+                </div>
+            </div>
+
+            <p class="text_results">Wyniki finałowego biegu na 200 metrów </p>
+            <div class="container_results">
+                <div class="flex_container_result">
+                    <i class="fas fa-medal"></i>
+                    <p class="name"><strong>Irena Szewińska</strong></p>
+                    <p class="result"><strong>22.58s</strong></p>
+                </div>
+{#            </div>#}
+{#            <div class="container_results">#}
+                <div class="flex_container_result">
+                    <i class="fas fa-medal"></i>
+                    <p class="name">Raelene Boyle(Australia)</p>
+                    <p class="result">22.74s.</p>
+                </div>
+{#            </div>#}
+{#            <div class="container_results">#}
+                <div class="flex_container_result">
+                    <i class="fas fa-medal"></i>
+                    <p class="name">Jennifer Lamy(Australia)</p>
+                    <p class="result">22.88s.</p>
+{#                </div>#}
+            </div>
+{#        </div>#}
+{#    </div>#}
+</div>
+{% endblock %}

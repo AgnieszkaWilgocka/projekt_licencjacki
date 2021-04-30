@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+{#        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">#}
+{#         Run `composer require symfony/webpack-encore-bundle`#}
+{#           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+                  crossorigin="anonymous">
+{#            <link rel="preconnect" href="https://fonts.gstatic.com">#}
+{#            <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">#}
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+{#            <link href="../../lib/dist/css/lightbox.css" rel="stylesheet">#}
+{#            <link rel="stylesheet" href="{{ asset('lib/dist/css/lightbox.css') }}">#}
+
+            <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
+
+
+    </head>
+    <body>
+{#        {% block body %}#}
+            <header class="img_header">
+{#                <img src="{{ asset('images/tlo1_auto_x2vol33.jpg') }}" alt="" class="slider1">#}
+{#                <img src="{{ asset('images/tlo3_auto_x2vol2.jpg') }}" alt="" class="slider2">#}
+{#                <img src="{{ asset('images/tlo2_auto_x2vol2.jpg') }}" alt="" class="slider3">#}
+                <img src="{{ asset('images/tlo1_auto_x22222.jpg') }}" alt="" class="slider1">
+{#                <img class="slider1"><a id='xGawfATHRv98oLgDF9YE_w' class='gie-single' href='http://www.gettyimages.com/detail/498591954' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'xGawfATHRv98oLgDF9YE_w',sig:'IZ8Xzp7lFUHqjeTn3iQ8J0CRRPzpaPruINNCbKC3aMY=',w:'594px',h:'399px',items:'498591954',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>#}
+                <img src="{{ asset('images/tlo3_auto_x2.jpg') }}" alt="" class="slider2">
+                <img src="{{ asset('images/tlo2_auto_x2.jpg') }}" alt="" class="slider3">
+                <div class="hamburger_menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </header>
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="{{ url('main_page') }}">Strona główna</a></li>
+                    <li class="dropmenu">
+                            Irena Szewińska
+                            <i class="fas fa-angle-down"></i>
+
+                    <div class="dropmenu">
+                            <ul class="drop-menu">
+                                <li><a href="{{ url('career') }}">Początek kariery</a></li>
+                                <li><a href="{{ url('duet') }}">Duet K-K</a></li>
+                                <li><a href="{{ url('competitions') }}">IO/ME (1966-1977)</a></li>
+                            </ul>
+
+                    </div>
+                    </li>
+                    <li><a href="#">Kluby</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li class="el_right"><a href="{{ url('app_login') }}">Zaloguj się</a></li>
+                </ul>
+
+            </nav>
+{#<hr>#}
+{#        {% endblock %}#}
+
+
+
+{% block body %}{% endblock %}
+
+<footer>
+        <p>copyright</p>
+
+</footer>
+        {% block javascripts %}
+{#            <script src="../lib/jquery-3.6.0.min.js"></script>#}
+            {#            <script src="../lib/dist/js/lightbox-plus-jquery.min.js"></script>#}
+
+{#            <script src="{{ asset('lib/jquery-3.6.0.min.js') }}"></script>#}
+{#            <script src="{{ asset('lib/dist/js/lightbox-plus-jquery.mis.js') }}"></script>#}
+            <script src="{{ asset('js/script.js') }}"></script>
+{#            {{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+    </body>
+</html>

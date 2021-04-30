@@ -1,0 +1,149 @@
+h1 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+p.source {
+    font-size: 15px;
+    font-style: italic;
+    text-align: right;
+}
+
+p.about_competition {
+    padding: 20px 0;
+}
+
+p.text_result {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+strong {
+    color: firebrick;
+}
+
+.container_img {
+    background-image: url("../images/irena-szewinska-Puchar-Swiata.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    /*height: 40vh;*/
+    /*width: 60%;*/
+    /*margin: 0 auto;*/
+    /*overflow: hidden;*/
+    /*background-color: #ddd;*/
+}
+
+
+/*.container_img img {*/
+/*    position: absolute;*/
+/*    top: 80%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+/*}*/
+
+.video_container {
+    padding-left: calc(50% - 560px/2);
+    padding-bottom: 20px;
+    /*position: relative;*/
+    /*height: 50vh;*/
+    /*overflow: hidden;*/
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .flex_container_result * {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 600px) {
+    .container_img {
+        height: 35vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    p.source {
+        font-size: 12px;
+    }
+
+    .flex_container_result * {
+        font-size: 16px;
+    }
+
+    iframe {
+        width: 520px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 411px) {
+    iframe {
+        width: 340px;
+        height: 300px;
+    }
+
+    p.text_result {
+        text-align: center;
+    }
+
+    p.about_competition {
+        padding: 10px 0;
+    }
+
+    .flex_container_result * {
+        font-size: 14px;
+    }
+
+    .container_results {
+        padding-bottom: 30px;
+    }
+}
+
+@media(max-width: 360px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p.about_competition {
+        padding: 5px 0;
+    }
+
+    .container_img {
+        height: 45vh;
+    }
+
+    iframe {
+        width: 280px;
+        height: 250px;
+    }
+
+    .flex_container_result * {
+        font-size: 13px;
+    }
+}

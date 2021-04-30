@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/c_Budapest.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <h1>Mistrzostwa Europy - Budapeszt 1966r</h1>
+        <div class="img_container">
+            <img src="{{ asset('images/1024px-Budapeszt.jpg') }}" alt="">
+        </div>
+        <p class="source">Źródło: Public domain</p>
+        <p class="about_competition">Mistrzostwa Europy w Budapeszczie odbywały się w roku 1966.
+            Był to okres, kiedy Irena miała za sobą trudną sesje egzaminacyjną na uczelni.
+            Wiedział o tym dobrze trener Andrzej Piotrowski. Postanowił więc nie dokładać Irenie kolejnego bagażu stresu.
+            Miała ona wystąpić tylko w konkurencji w biegu na 100metrów, w sztafecie 4x100m i w skoku w dal.
+            Irena miała nieco odmienne zdanie i pobiegła dodatkowo w biegu na 200 metrów.
+            Pokazuje to niesłychaną waleczność sprinterki. Miała ona przed sobą aż cztery konkurencje.
+            Dodatkowo pomiędzy biegiem półfinałowym a finałem na 200 metrów czekały eliminacje w skoku w dal.
+            Musiał to być duży wysiłek dla tej młodej sportsmenki. Irena stanęła jednak na wysokości zadania.
+        </p>
+
+{#        <div class="bgimage_result">#}
+{#            <div class="bgi">#}
+                <p class="text_results">Wyniki finałowego biegu na 100 metrów:</p>
+                <div class="container_results">
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name">Ewa Kłobukowska</p>
+                        <p class="result">11.5s</p>
+                    </div>
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name"><strong>Irena Kirszenstein</strong></p>
+                        <p class="result"><strong>11.8s</strong></p>
+                    </div>
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name">Karin Firsch(RFN)</p>
+                        <p class="result">11.8s</p>
+                    </div>
+                </div>
+
+                <p class="text_results">Wyniki finałowego biegu na 200 metrów</p>
+                <div class="container_results">
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name"><strong>Irena Kirszenstein</strong></p>
+                        <p class="result"><strong>23.1s</strong></p>
+                    </div>
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name">Ewa Kłobukowska</p>
+                        <p class="result">23.4s</p>
+                    </div>
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name">Wiera Popkowa</p>
+                        <p class="result">23.7s</p>
+                    </div>
+                </div>
+
+                <p class="text_results">Wyniki finałowej serii w skoku w dal: </p>
+                <div class="container_results">
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name"><strong>Irena Kirszenstein</strong></p>
+                        <p class="result"><strong>6.55m</strong></p>
+                    </div>
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name">Diana Jorgowa(Bułgaria)</p>
+                        <p class="result">6.45m</p>
+                    </div>
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name">Helga Hoffmann(RFN)</p>
+                        <p class="result">6.38m</p>
+                    </div>
+                </div>
+
+                <p class="text_results">Wyniki finałowej serii w sztafecie 4x100 metrów</p>
+                <div class="container_results">
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name"><strong>Polska</strong></p>
+                        <p class="result"><strong>44.49s</strong></p>
+                    </div>
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name">RFN</p>
+                        <p class="result">44.60s</p>
+                    </div>
+                    <div class="flex_container_result">
+                        <i class="fas fa-medal"></i>
+                        <p class="name">ZSRR</p>
+                        <p class="result">44.70s</p>
+                    </div>
+                </div>
+{#            </div>#}
+{#        </div>#}
+
+
+
+
+
+
+
+
+    </div>
+{% endblock %}

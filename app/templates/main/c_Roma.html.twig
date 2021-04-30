@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/c_Roma.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <h1>Mistrzostwa Europy - Rzym 1974r</h1>
+        <div class="container_img">
+            <img src="{{ asset('images/1024pxSzewinska-Rzym-1974.jpg') }}" alt="">
+        </div>
+        <p class="source">Autor zdjęcia: Leszek Fidusiewicz</p>
+        <p class="about_competition">
+            Na te mistrzostwa Irena pracowała ze swoim dawnym trenerem Andrzejem Piotrowskim.
+            Opiekował się on grupą 400 metrowców. Głównym trenerem stał się jednak jej mąż, Janusz Szewiński.
+            O tej współpracy wypowiadano się za pomocą samych superlatyw. Irena w tym okresie osiągała szczytową formę.
+            Potwierdzają to wyniki Mistrzostw. Irena Szewińska startowała w konkurecji biegu na 100metrów.
+            Pokonała ona tam rywalkę Renate Stecher, z którą toczyła równe walki w poprzednich zawodach.
+            Irena pobiegła również na dystancie 200 metrów oraz w sztafecie 4x100 metrów.
+            Do swojego medalowego dorobku dołożyła złoty, srebrny i brązowy medal mistrzostw.
+            Było również bardzo blisko do brązowego medalu w sztafecie 4x400 metrów.
+        </p>
+        <p class="text_result">Wyniki finałowej serii w biegu na 100 metrów</p>
+        <div class="container_results">
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name"><strong>Irena Szewińska</strong></p>
+                <p class="result"><strong>11.3s</strong></p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">Renate Stecher(NRD)</p>
+                <p class="result">11.23s</p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">Andrea Lynch(UK)</p>
+                <p class="result">11.28s</p>
+            </div>
+        </div>
+    <p class="text_result">Wyniki finałowej serii w biegu na 200 metrów</p>
+        <div class="container_results">
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name"><strong>Irena Szewińska</strong></p>
+                <p class="result"><strong>22.51s</strong></p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">Renate Stecher</p>
+                <p class="result">22.68s</p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">Mona-Lisa Pursiainen</p>
+                <p class="result">23.17s</p>
+            </div>
+        </div>
+    <p class="text_result">Wyniki finałowej serii w sztafecie 4x400 metrów</p>
+        <div class="container_results">
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">NRD</p>
+                <p class="result">42.51s</p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name">RFN</p>
+                <p class="result">42.75s</p>
+            </div>
+            <div class="flex_container_result">
+                <i class="fas fa-medal"></i>
+                <p class="name"><strong>Polska</strong></p>
+                <p class="result"><strong>43.48s</strong></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

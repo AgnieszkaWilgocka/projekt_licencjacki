@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{%  block title %}
+Show record
+{% endblock %}
+{#{% block stylesheets %}#}
+{#<link rel="stylesheet" href="{{ asset('css/styles.css') }}">#}
+{#{% endblock %}#}
+{% block body %}
+    <div class="wrapp">
+    {% if item is defined and item|length %}
+    <p>Id</p>
+    <p>{{ item.id }}</p>
+    <p>Title</p>
+    <p>{{ item.title }}</p>
+    <p>Tags</p>
+    <p>{{ item.tags|join(', ') }}</p>
+
+    {% else %}
+    <p>Record not found</p>
+    {% endif %}
+    </div>
+{% endblock %}
