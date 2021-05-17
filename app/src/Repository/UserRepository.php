@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
@@ -17,6 +18,11 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class UserRepository extends ServiceEntityRepository implements PasswordUpgraderInterface
 {
+    /**
+     * Items per page.
+     */
+    const PAGINATOR_ITEMS_PER_PAGE = 5;
+
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, User::class);
@@ -48,6 +54,27 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $this->_em->flush($user);
     }
 
+    /**
+     * Query all records
+     *
+     * @return QueryBuilder
+     */
+    public function queryAll(): QueryBuilder
+    {
+        return $this->getOrCreateQueryBuilder();
+    }
+
+    /**
+     * Get or create new query builder
+     *
+     * @param QueryBuilder $queryBuilder
+     *
+     * @return QueryBuilder
+     */
+    private function getOrCreateQueryBuilder(QueryBuilder $queryBuilder = null): QueryBuilder
+    {
+        return $queryBuilder ?? $this->createQueryBuilder('user');
+    }
     // /**
     //  * @return User[] Returns an array of User objects
     //  */

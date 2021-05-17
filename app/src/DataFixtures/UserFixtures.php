@@ -9,6 +9,9 @@ use App\Entity\User;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
+/**
+ * Class UserFixtures
+ */
 class UserFixtures extends AbstractBaseFixtures
 {
     /**
@@ -35,10 +38,11 @@ class UserFixtures extends AbstractBaseFixtures
      */
     public function loadData(ObjectManager $manager): void
     {
-        $this->createMany(10, 'users', function ($i) {
+        $this->createMany(5, 'users', function ($i) {
             $user = new User();
             $user->setEmail(sprintf('user%d@example.com', $i));
             $user->setRoles([User::ROLE_USER]);
+            $user->setUserData($this->getReference('usersData_'.$i));
             $user->setPassword(
                 $this->passwordEncoder->encodePassword(
                     $user,
@@ -49,10 +53,11 @@ class UserFixtures extends AbstractBaseFixtures
             return $user;
         });
 
-        $this->createMany(3, 'admins', function ($i) {
+        $this->createMany(5, 'admins', function ($i) {
             $user = new User();
             $user->setEmail(sprintf('admin%d@example.com', $i));
             $user->setRoles([User::ROLE_USER, User::ROLE_ADMIN]);
+            $user->setUserData($this->getReference('usersDataAdmin_'.$i));
             $user->setPassword(
                 $this->passwordEncoder->encodePassword(
                     $user,
@@ -64,5 +69,13 @@ class UserFixtures extends AbstractBaseFixtures
         });
 
         $manager->flush();
+    }
+
+    /**
+     * @return array
+     */
+    public function getDependencies()
+    {
+        return [UserDataFixtures::class];
     }
 }

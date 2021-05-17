@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="wrapper">
+{{ form_start(form, {method: 'PUT', action: url('question_answer', {'id': question_possible_answer.id}) }) }}
+    {{ form_widget(form) }}
+
+{{ form_end(form) }}
+</div>
+{% endblock %}

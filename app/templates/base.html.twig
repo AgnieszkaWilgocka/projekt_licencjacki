@@ -60,9 +60,16 @@
 
                     </div>
                     </li>
-                    <li><a href="#">Kluby</a></li>
-                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">O stronie</a></li>
+                    <li><a href="{{ url('question_index') }}">Quiz</a></li>
+                    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+{#                    <li class="el_right"><a href="{{ url('app_logout') }}">Wyloguj się</a></li>#}
+                        <li><a href="{{ url('user_show', {id: app.user.id}) }}">Moje konto</a></li>
+
+                    {% else %}
                     <li class="el_right"><a href="{{ url('app_login') }}">Zaloguj się</a></li>
+
+                    {% endif %}
                 </ul>
 
             </nav>

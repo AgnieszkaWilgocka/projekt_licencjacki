@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="148a7b3a-4dd7-4261-b32d-07c887bf0668" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/css/quiz.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/css/registration.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/QuestionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/QuestionPossibleAnswerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/QuizController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Form/QuestionPossibleAnswerType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Form/QuestionType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/question/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/quiz/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/498954cb-a444-4451-8225-c44196126cad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/498954cb-a444-4451-8225-c44196126cad.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +78,42 @@
         <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="questions: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="questions_possible_answers: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="quizes: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="user: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="user_answer: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="user_data: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -181,6 +240,8 @@
       <path value="$PROJECT_DIR$/app/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/app/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/app/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/app/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/knplabs/knp-components" />
     </include_path>
   </component>
   <component name="ProjectId" id="1q5FwTX5dUntzy4nMVpMmujM80I" />
@@ -200,6 +261,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aga\PhpstormProjects\licencjat\app\templates" />
       <recent name="C:\Users\Aga\PhpstormProjects\licencjat\app\public" />
     </key>
   </component>
@@ -241,7 +303,30 @@
       <workItem from="1619472907199" duration="2302000" />
       <workItem from="1619559983862" duration="1391000" />
       <workItem from="1619614016846" duration="1191000" />
-      <workItem from="1619796127744" duration="1193000" />
+      <workItem from="1619796127744" duration="10181000" />
+      <workItem from="1619871768855" duration="13256000" />
+      <workItem from="1619901223007" duration="11000000" />
+      <workItem from="1619955223133" duration="25304000" />
+      <workItem from="1620061297410" duration="14776000" />
+      <workItem from="1620081768355" duration="731000" />
+      <workItem from="1620301538701" duration="21934000" />
+      <workItem from="1620403950574" duration="14425000" />
+      <workItem from="1620491990539" duration="606000" />
+      <workItem from="1620578435582" duration="8631000" />
+      <workItem from="1620664708630" duration="12589000" />
+      <workItem from="1620725231961" duration="1071000" />
+      <workItem from="1620767314451" duration="3659000" />
+      <workItem from="1620816082565" duration="4350000" />
+      <workItem from="1620848458822" duration="6424000" />
+      <workItem from="1620903584101" duration="18216000" />
+      <workItem from="1620997797740" duration="616000" />
+      <workItem from="1620999818799" duration="3120000" />
+      <workItem from="1621003848063" duration="3939000" />
+      <workItem from="1621095279861" duration="7503000" />
+      <workItem from="1621187007665" duration="19525000" />
+      <workItem from="1621262680053" duration="830000" />
+      <workItem from="1621264005285" duration="1964000" />
+      <workItem from="1621267029017" duration="798000" />
     </task>
     <servers />
   </component>
@@ -253,10 +338,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="831" y="244" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1616370910961" />
-    <state x="599" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617991529910">
+    <state x="599" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620938619130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="599" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617991529910" />
+    <state x="599" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620938619130" />
     <state x="732" y="310" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618943306267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,26 +350,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="695" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617973443790" />
-    <state x="1031" y="331" key="FileChooserDialogImpl" timestamp="1619025077020">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1621198771342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1031" y="331" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619025077020" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621198771342" />
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1621269075792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1621269075792" />
+    <state x="1031" y="331" key="FileChooserDialogImpl" timestamp="1621003969804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1031" y="331" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1621003969804" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1617386423618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1617386423618" />
-    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1617972351662">
+    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1620938189403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617972351662" />
+    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620938189403" />
     <state x="370" y="278" key="SettingsEditor" timestamp="1617457196156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="370" y="278" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617457196156" />
-    <state x="636" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1619019902936">
+    <state x="676" y="157" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1619883190299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619019902936" />
+    <state x="676" y="157" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619883190299" />
+    <state x="636" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1621003847721">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621003847721" />
+    <state x="686" y="158" key="refactoring.ChangeSignatureDialog" timestamp="1621198204792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="158" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621198204792" />
     <state x="1002" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1617821890277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

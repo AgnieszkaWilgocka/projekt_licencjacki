@@ -1322,72 +1322,251 @@
     <table id="332" parent="3" name="doctrine_migration_versions">
       <Collation>utf8_unicode_ci</Collation>
     </table>
-    <table id="333" parent="3" name="user">
+    <table id="333" parent="3" name="questions">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <column id="334" parent="332" name="version">
+    <table id="334" parent="3" name="questions_possible_answers">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="335" parent="3" name="quizes">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="336" parent="3" name="user">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="337" parent="3" name="user_answer">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="338" parent="3" name="user_data">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <column id="339" parent="332" name="version">
       <Position>1</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="332" name="executed_at">
+    <column id="340" parent="332" name="executed_at">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="332" name="execution_time">
+    <column id="341" parent="332" name="execution_time">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="337" parent="332" name="PRIMARY">
+    <key id="342" parent="332" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="338" parent="333" name="id">
+    <column id="343" parent="333" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="333" name="email">
+    <column id="344" parent="333" name="content">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="345" parent="333" name="quiz_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="346" parent="333" name="IDX_8ADC54D5853CD175">
+      <ColNames>quiz_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="347" parent="333" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="348" parent="333" name="FK_8ADC54D5853CD175">
+      <ColNames>quiz_id</ColNames>
+      <RefTableName>quizes</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="349" parent="334" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="350" parent="334" name="content">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="351" parent="334" name="is_correct">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="352" parent="334" name="question_id">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="353" parent="334" name="IDX_F0BEFB2F1E27F6BF">
+      <ColNames>question_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="354" parent="334" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="355" parent="334" name="FK_F0BEFB2F1E27F6BF">
+      <ColNames>question_id</ColNames>
+      <RefTableName>questions</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="356" parent="335" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="357" parent="335" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="358" parent="335" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="359" parent="336" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="360" parent="336" name="email">
       <Position>2</Position>
       <DataType>varchar(180)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="333" name="roles">
+    <column id="361" parent="336" name="roles">
       <Position>3</Position>
+      <Comment>(DC2Type:json)</Comment>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
-      <Collation>utf8mb4_bin</Collation>
     </column>
-    <column id="341" parent="333" name="password">
+    <column id="362" parent="336" name="password">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="342" parent="333" name="UNIQ_8D93D649E7927C74">
+    <column id="363" parent="336" name="user_data_id">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="364" parent="336" name="email_idx">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="343" parent="333" name="PRIMARY">
+    <index id="365" parent="336" name="UNIQ_8D93D6496FF8BF36">
+      <ColNames>user_data_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="366" parent="336" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="344" parent="333" name="UNIQ_8D93D649E7927C74">
+    <key id="367" parent="336" name="email_idx">
       <ColNames>email</ColNames>
-      <UnderlyingIndexName>UNIQ_8D93D649E7927C74</UnderlyingIndexName>
+      <UnderlyingIndexName>email_idx</UnderlyingIndexName>
     </key>
-    <check id="345" parent="333" name="roles">
-      <Predicate>json_valid(`roles`)</Predicate>
-    </check>
+    <key id="368" parent="336" name="UNIQ_8D93D6496FF8BF36">
+      <ColNames>user_data_id</ColNames>
+      <UnderlyingIndexName>UNIQ_8D93D6496FF8BF36</UnderlyingIndexName>
+    </key>
+    <foreign-key id="369" parent="336" name="FK_8D93D6496FF8BF36">
+      <ColNames>user_data_id</ColNames>
+      <RefTableName>user_data</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="370" parent="337" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="371" parent="337" name="questions_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="372" parent="337" name="question_possible_answer_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="373" parent="337" name="IDX_BF8F5118BCB134CE">
+      <ColNames>questions_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="374" parent="337" name="IDX_BF8F511885A260DD">
+      <ColNames>question_possible_answer_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="375" parent="337" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="376" parent="337" name="FK_BF8F5118BCB134CE">
+      <ColNames>questions_id</ColNames>
+      <RefTableName>questions</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="377" parent="337" name="FK_BF8F511885A260DD">
+      <ColNames>question_possible_answer_id</ColNames>
+      <RefTableName>questions_possible_answers</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="378" parent="338" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="379" parent="338" name="nick">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="380" parent="338" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

@@ -1,0 +1,98 @@
+/*.wrapper {*/
+/*    border-radius: 5%;*/
+/*}*/
+.wrapper {
+    position: relative;
+}
+h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75rem;
+}
+.button_send {
+    position: relative;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #cd726e;
+    /*letter-spacing: 1px;*/
+    overflow: hidden;
+    /*border-radius: 10%;*/
+    font-size: 18px;
+    z-index: 1;
+    transition: .1s;
+    /*font-weight: bold;*/
+
+
+}
+
+.button_send::after {
+    content: "";
+    /*display: inline-block;*/
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    /*transform: translateY(-50%);*/
+    height: 100%;
+    width: 100%;
+    /*border-radius: 50%;*/
+    background-color: #cd726e;
+    transition: bottom .1s linear;
+    z-index: -1;
+}
+
+.button_send:hover {
+    color: #fff;
+    /*transform: scale(1.1);*/
+    /*z-index: 1;*/
+
+
+}
+.button_send:hover::after {
+    /*left: -50%;*/
+    bottom: 0;
+    /*z-index: -1;*/
+
+}
+
+.register_link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    overflow: hidden;
+
+}
+
+.register_link a {
+    position: relative;
+    color: #cd726e;
+    /*overflow: hidden;*/
+}
+
+.register_link a:hover {
+    color: firebrick;
+    text-decoration: none;
+    /*text-overline: none;*/
+
+}
+
+.register_link a::after {
+    content: "";
+    position: absolute;
+    right: -150%;
+    /*left: -110%;*/
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: firebrick;
+    transition: .3s;
+
+}
+
+.register_link a:hover::after {
+    /*left: 0;*/
+    right: 0;
+}

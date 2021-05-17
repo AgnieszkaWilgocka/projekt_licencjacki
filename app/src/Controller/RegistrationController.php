@@ -7,7 +7,9 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Entity\UserData;
 use App\Form\RegistrationType;
+use App\Repository\UserDataRepository;
 use App\Repository\UserRepository;
 use App\Security\LoginFormAuthenticator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -25,14 +27,18 @@ class RegistrationController extends AbstractController
 
     private $userRepository;
 
+    private $userDataRepository;
+
     /**
      * RegistrationController constructor.
      *
-     * @param UserRepository $userRepository
+     * @param UserRepository     $userRepository
+     * @param UserDataRepository $userDataRepository
      */
-    public function __construct(UserRepository $userRepository)
+    public function __construct(UserRepository $userRepository, UserDataRepository $userDataRepository)
     {
         $this->userRepository = $userRepository;
+        $this->userDataRepository = $userDataRepository;
     }
 
     /**
@@ -56,6 +62,7 @@ class RegistrationController extends AbstractController
     public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, GuardAuthenticatorHandler $guardHandler, LoginFormAuthenticator $formAuthenticator)
     {
         $user = new User();
+        $userData = new UserData();
         $form = $this->createForm(RegistrationType::class, $user);
         $form->handleRequest($request);
 
@@ -66,9 +73,10 @@ class RegistrationController extends AbstractController
                     $user->getPassword()
                 )
             );
-
+            $user->setUserData($userData);
             $user->setRoles([User::ROLE_USER]);
             $this->userRepository->save($user);
+            $this->userDataRepository->save($userData);
 
             $this->addFlash('success', 'Account created successfully');
 

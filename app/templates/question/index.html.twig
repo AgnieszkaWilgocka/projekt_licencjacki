@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/quiz.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="quiz_container">
+
+    <form method="post" action="{{ url('sendQuiz') }}">
+
+    {% for question in question %}
+        {% if question.id == 4 %}
+            <div class="head_form">
+                <h1>{{ question.quiz.name }}</h1>
+            </div>
+        {% endif %}
+
+        <div class="question">
+            <label>{{ question.content }}</label>
+        </div>
+
+    {% for questionPossibleAnswer in question.questionPossibleAnswer %}
+        <div class="answer">
+
+{#            <div class="click">#}
+                <input id="{{ questionPossibleAnswer.id }}" type="radio" value="{{ questionPossibleAnswer.isCorrect }}" name="{{ questionPossibleAnswer.question.content }}">
+{#            </div>#}
+            <label class="radio" for="{{ questionPossibleAnswer.id }}">{{ questionPossibleAnswer.content }}
+            </label>
+        </div>
+{#        </label>#}
+
+    {% endfor %}
+
+    {% endfor %}
+
+        <button class="button_send" type="submit"> Wyślij </button>
+</form>
+</div>
+{#    </div>#}
+{% endblock %}

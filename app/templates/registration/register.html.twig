@@ -15,20 +15,27 @@ Registration
 {% endblock %}
 {% block stylesheets %}
     {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/registration.css') }}">
 {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">#}
 {% endblock %}
 
 {% block body %}
     <div class="wrapper">
-<h1>Registration</h1>
+<h1>Rejestracja</h1>
 
+{#        <form method="post">#}
+{#            <label for="inputEmail">Email</label>#}
+{#            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>#}
+{#            <label for="inputPassword">Password</label>#}
+{#            <input type="password" name="password" id="inputPassword" class="form-control" required>#}
+{#        </form>#}
 {{ form_start(form, {method: 'POST', action: url('app_register') }) }}
 {{ form_widget(form) }}
 
 
-<div>
-    <input type="submit" value="submit">
-</div>
+{#<div>#}
+    <button class="button_send" type="submit"> Zerejestruj się</button>
+{#</div>#}
 
 {{ form_end(form) }}
     </div>

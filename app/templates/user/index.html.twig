@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+   {% if pagination is defined and pagination.items|length %}
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>{{ knp_pagination_sortable(pagination, 'label_email', 'user.email') }}</th>
+            <th>{{ knp_pagination_sortable(pagination, 'label_nick', 'user.userData.nick') }}</th>
+            <th>{{ 'label_action' }}</th>
+        </tr>
+        </thead>
+        <tbody>
+
+    {% for user in pagination.items %}
+        <tr>
+            <td>{{ user.email }}</td>
+            <td>{{ user.userData.nick }}</td>
+            <td><a href="{{ url('user_data_edit', {id: user.userData.id}) }}">Zmien nick</a></td>
+            <td><a href="{{ url('change_password', {id: user.id}) }}">Zmien haslo</a></td>
+        </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+       <div class="navigation text-center">
+           {{ knp_pagination_render(pagination) }}
+       </div>
+
+    {% else %}
+    <p>Items empty</p>
+    {% endif %}
+{% endblock %}

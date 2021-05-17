@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/registration.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="wrapper">
+        {{ form_start(form, {method: 'POST', action: url('quiz') }) }}
+        {{ form_widget(form) }}
+        <button class="button_send" type="submit"> Prześlij</button>
+
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
