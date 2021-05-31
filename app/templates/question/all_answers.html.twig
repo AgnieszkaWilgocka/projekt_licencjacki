@@ -1,7 +1,22 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/registration.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/quiz.css') }}">
+
+{% endblock %}
 {% block body %}
 {#    {% for counter in counter %}#}
-    Twój wynik to: {{ counter }}
+    <div class="wrapper">
+        <h1>Twój wynik to: {{ counter }}/10 </h1>
+
+        <p class="show_results">Zobacz <a href="{{ url('answers') }}">poprawne odpowiedzi</a></p>
+
+        <p class="register_link">Powrót do <a href="{{ url('main_page') }}">strony głównej</a></p>
+
+
+    </div>
+
 {#    {% endfor %}#}
 {% endblock %}

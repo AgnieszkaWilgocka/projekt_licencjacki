@@ -37,24 +37,24 @@ class QuestionPossibleAnswerRepository extends ServiceEntityRepository
 //
 //    }
 
-    /**
-     * @param Question $question
-     * @return Collection
-     */
-    public function getAnswerByQuestion(Question $question): Collection
-    {
-//        $table = [];
-        $answers = $question->getQuestionPossibleAnswer();
-
-        $temp = "";
-        foreach ($answers as $answer) {
-            if ($question->getId() == $answer->getId()) {
-                $temp = $answer;
-            }
-        }
-
-        return $temp;
-    }
+//    /**
+//     * @param Question $question
+//     * @return Collection
+//     */
+//    public function getAnswerByQuestion(Question $question): Collection
+//    {
+////        $table = [];
+//        $answers = $question->getQuestionPossibleAnswer();
+//
+//        $temp = "";
+//        foreach ($answers as $answer) {
+//            if ($question->getId() == $answer->getId()) {
+//                $temp = $answer;
+//            }
+//        }
+//
+//        return $temp;
+//    }
 
 
     public function queryByQuestion(Question $question): QueryBuilder

@@ -127,6 +127,8 @@ class UserController extends AbstractController
             );
             $this->userRepository->save($user);
 
+            $this->addFlash('success', 'action_change_data');
+
             return $this->redirectToRoute('main_page');
         }
 

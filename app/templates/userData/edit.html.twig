@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/registration.css') }}">
+{% endblock %}
+{% block body %}
+<div class="wrapper">
+
+    {{ form_start(form, {method: 'PUT', action: url('user_data_edit', {id: userData.id}) }) }}
+    {{ form_widget(form) }}
+    <button class="button_send" type="submit"> Zapisz</button>
+</div>
+{% endblock %}

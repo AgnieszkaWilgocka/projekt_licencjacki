@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/registration.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/user.css') }}">
+
+
+
+{% endblock %}
+{% block body %}
+<div class="wrapper">
+    <h1>Profil użytkownika {{ user.userData.nick }}</h1>
+    <i class="fas fa-user-circle"></i>
+    {% if user is defined and user|length %}
+<dl>
+    <dt>Email</dt>
+    <dd>{{ user.email }}</dd>
+    <dt>Nick</dt>
+    <dd>{{ user.userData.nick }}</dd>
+
+
+
+        {% if user.userData.nick|length %}
+            <a class="user_link" href="{{ url('user_data_edit', {id: user.userData.id}) }}">Zmień nick</a>
+        {% else %}
+            <a class="user_link" href="{{ url('user_data_edit', {id: user.userData.id}) }}">Ustaw nick</a>
+        {% endif %}
+    <a class="user_link" href="{{ url('change_password', {id: user.id}) }}">Zmień haslo</a>
+        {% if is_granted('ROLE_ADMIN') %}
+            <a class="user_link" href="{{ url('user_index') }}">Zarządzaj kontami</a>
+        {% endif %}
+    <a class="user_link" href="{{ url('app_logout') }}">Wyloguj się</a>
+    </dd>
+</dl>
+
+
+    {% endif %}
+</div>
+{% endblock %}

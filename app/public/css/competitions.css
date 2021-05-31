@@ -41,6 +41,10 @@ h1 {
     top: 90%;
 }
 
+footer {
+    max-width: 1600px;
+}
+
 @media(min-width: 600px) {
 
 .container_img:hover img{

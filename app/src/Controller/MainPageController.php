@@ -161,4 +161,17 @@ class MainPageController extends AbstractController
     {
         return $this->render('main/c_Monachium.html.twig');
     }
+
+    /**
+     * @return Response
+     *
+     * @Route(
+     *     "about",
+     *     name="about"
+     * )
+     */
+    public function about():Response
+    {
+        return $this->render('main/about.html.twig');
+    }
 }

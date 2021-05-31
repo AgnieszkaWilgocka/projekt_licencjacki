@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\UserData;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -32,6 +33,27 @@ class UserDataRepository extends ServiceEntityRepository
         $this->_em->persist($userData);
     }
 
+    /**
+     * Query all records
+     *
+     * @return QueryBuilder
+     */
+    public function queryAll(): QueryBuilder
+    {
+        return $this->getOrCreateQueryBuilder();
+    }
+
+    /**
+     * Get or create new query builder
+     *
+     * @param QueryBuilder $queryBuilder
+     *
+     * @return QueryBuilder
+     */
+    private function getOrCreateQueryBuilder(QueryBuilder $queryBuilder = null): QueryBuilder
+    {
+        return $queryBuilder ?? $this->createQueryBuilder('userData');
+    }
     // /**
     //  * @return UserData[] Returns an array of UserData objects
     //  */

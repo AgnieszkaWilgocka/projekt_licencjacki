@@ -26,7 +26,7 @@ class UserDataType extends AbstractType
             'nick',
             TextType::class,
             [
-                'label' => 'label_nick',
+                'label' => 'nick',
                 'required' => true,
 
             ]

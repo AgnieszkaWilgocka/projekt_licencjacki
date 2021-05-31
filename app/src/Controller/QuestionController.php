@@ -62,6 +62,27 @@ class QuestionController extends AbstractController
     }
 
     /**
+     * @Route(
+     *     "/answers",
+     *     methods={"GET", "POST"},
+     *     name="answers"
+     * )
+     * @return Response
+     */
+    public function showAnswers():Response
+    {
+        $question = $this->getDoctrine()
+            ->getRepository('App:Question')
+            ->findAll();
+
+        return $this->render(
+            'question/show.html.twig',
+//            ['question' => $question]
+            array('question' => $question)
+        );
+    }
+
+    /**
      * @param Request $request
      * @return Response
      *

@@ -2,33 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="148a7b3a-4dd7-4261-b32d-07c887bf0668" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/public/css/quiz.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/css/registration.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/QuestionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/QuestionPossibleAnswerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/QuizController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Form/QuestionPossibleAnswerType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Form/QuestionType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/question/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/quiz/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/user/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/css/user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/DataFixtures/UserDataFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/498954cb-a444-4451-8225-c44196126cad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/498954cb-a444-4451-8225-c44196126cad.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20210402175003.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/css/career.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/career.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/css/competitions.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/competitions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/css/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/quiz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/css/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/registration.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/MainPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/MainPageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/QuestionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/UserDataController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/UserDataController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Form/ChangePasswordType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/ChangePasswordType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Form/RegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/RegistrationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Form/UserAnswerType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/UserAnswerType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Form/UserDataType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/UserDataType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/QuestionPossibleAnswerRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/QuestionPossibleAnswerRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/UserDataRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/UserDataRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/main/c_Budapest.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main/c_Budapest.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/main/c_Mexico.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main/c_Mexico.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/main/career.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main/career.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/main/competitions.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main/competitions.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/main/duet.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main/duet.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/question/all_answers.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/question/all_answers.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/question/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/question/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/question/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/question/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,13 +87,6 @@
         <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="questions: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="questions_possible_answers: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
@@ -93,27 +95,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="quizes: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="user: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="user_answer: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="licencjat@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="licencjat: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="user_data: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -255,12 +236,13 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aga\PhpstormProjects\licencjat\app" />
       <recent name="C:\Users\Aga\PhpstormProjects\licencjat\app\templates" />
       <recent name="C:\Users\Aga\PhpstormProjects\licencjat\app\public" />
     </key>
@@ -326,18 +308,51 @@
       <workItem from="1621187007665" duration="19525000" />
       <workItem from="1621262680053" duration="830000" />
       <workItem from="1621264005285" duration="1964000" />
-      <workItem from="1621267029017" duration="798000" />
+      <workItem from="1621267029017" duration="1832000" />
+      <workItem from="1621282520501" duration="4576000" />
+      <workItem from="1621332757357" duration="5677000" />
+      <workItem from="1621514952702" duration="2008000" />
+      <workItem from="1621530359327" duration="950000" />
+      <workItem from="1621531625023" duration="1480000" />
+      <workItem from="1621534499202" duration="12235000" />
+      <workItem from="1621601809349" duration="686000" />
+      <workItem from="1621617417749" duration="1204000" />
+      <workItem from="1621708674195" duration="3829000" />
+      <workItem from="1621771508693" duration="12902000" />
+      <workItem from="1621886999496" duration="6990000" />
+      <workItem from="1621949569794" duration="3432000" />
+      <workItem from="1622046899538" duration="2980000" />
+      <workItem from="1622064421413" duration="2792000" />
+      <workItem from="1622113700744" duration="2547000" />
+      <workItem from="1622122586547" duration="771000" />
+      <workItem from="1622154622304" duration="1750000" />
+      <workItem from="1622201023683" duration="1238000" />
+      <workItem from="1622320824793" duration="2353000" />
+      <workItem from="1622389525507" duration="6122000" />
+      <workItem from="1622462369584" duration="226000" />
     </task>
+    <task id="LOCAL-00001" summary="test_version">
+      <created>1621269221076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621269221076</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test_version" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_version" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="831" y="244" key="#CLI_Interpreters" timestamp="1616370910961">
+    <state x="454" y="350" key="#CLI_Interpreters" timestamp="1621535321185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="831" y="244" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1616370910961" />
+    <state x="454" y="350" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1621535321185" />
     <state x="599" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620938619130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -350,18 +365,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="695" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617973443790" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1621198771342">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1622114124450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621198771342" />
-    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1621269075792">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622114124450" />
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1621269219512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1621269075792" />
-    <state x="1031" y="331" key="FileChooserDialogImpl" timestamp="1621003969804">
+    <state x="583" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1621269219512" />
+    <state x="916" y="429" key="FileChooserDialogImpl" timestamp="1622462442863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1031" y="331" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1621003969804" />
+    <state x="916" y="429" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1622462442863" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1617386423618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -370,25 +385,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620938189403" />
-    <state x="370" y="278" key="SettingsEditor" timestamp="1617457196156">
+    <state x="236" y="132" key="SettingsEditor" timestamp="1621550159827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="370" y="278" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617457196156" />
+    <state x="236" y="132" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1621550159827" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1621269229529">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621269229529" />
     <state x="676" y="157" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1619883190299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="676" y="157" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619883190299" />
-    <state x="636" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1621003847721">
+    <state x="636" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1622462374815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621003847721" />
+    <state x="636" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622462374815" />
+    <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1621531662709">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621531662709" />
     <state x="686" y="158" key="refactoring.ChangeSignatureDialog" timestamp="1621198204792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="686" y="158" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621198204792" />
-    <state x="1002" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1617821890277">
+    <state x="1002" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1621547783675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1002" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617821890277" />
+    <state x="1002" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1621547783675" />
   </component>
 </project>

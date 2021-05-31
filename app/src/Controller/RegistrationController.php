@@ -78,7 +78,7 @@ class RegistrationController extends AbstractController
             $this->userRepository->save($user);
             $this->userDataRepository->save($userData);
 
-            $this->addFlash('success', 'Account created successfully');
+            $this->addFlash('success', 'action_account_create');
 
             return $guardHandler->authenticateUserAndHandleSuccess(
                 $user,

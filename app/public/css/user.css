@@ -1,0 +1,28 @@
+
+
+.fa-user-circle {
+    text-align: center;
+    display: block;
+    font-size: 64px;
+    color: #cd726e;
+}
+
+a.user_link {
+
+    padding-right: 40px;
+    color: #cd726e;
+    font-size: 18px;
+    transition: .2s;
+
+}
+
+a.user_link:hover {
+    text-decoration: none;
+    color: #a73b3d;
+}
+dd,
+dt {
+    font-size: 18px;
+}
+
+

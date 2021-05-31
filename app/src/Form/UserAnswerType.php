@@ -100,15 +100,15 @@ class UserAnswerType extends AbstractType
             EntityType::class,
             [
                 'class' => QuestionPossibleAnswer::class,
-                'choice_label' => 'question',
+//                'choice_label' => 'question',
 //                'query_builder' => $this->questionPossibleAnswerRepository->queryByQuestioon(),
-                'choices' => $this->getPossibleAnswers(),
-//                'choice_label' => function(QuestionPossibleAnswer $questionPossibleAnswer) {
-//                if ($questionPossibleAnswer->getQuestion()->getId() == 6) {
+//                'choices' => $this->getPossibleAnswers(),
+                'choice_label' => function(QuestionPossibleAnswer $questionPossibleAnswer) {
+                if ($questionPossibleAnswer->getQuestion()->getId() == 6) {
 ////
-//                    return $questionPossibleAnswer->getContent();
-//                }
-//                },
+                    return $questionPossibleAnswer->getContent();
+                }
+                },
                 'expanded' => true
             ]
         );

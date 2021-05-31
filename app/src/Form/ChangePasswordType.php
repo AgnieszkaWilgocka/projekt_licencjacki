@@ -28,8 +28,8 @@ class ChangePasswordType extends AbstractType
             RepeatedType::class,
             [
                 'type' => PasswordType::class,
-                'first_options' => array('label' => 'New password'),
-                'second_options' => array('label' => 'Confirm new password'),
+                'first_options' => array('label' => 'Nowe hasło'),
+                'second_options' => array('label' => 'Powtórz nowe hasło'),
             ]
 
         );
